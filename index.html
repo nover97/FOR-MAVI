@@ -193,11 +193,11 @@
         function daysDated(startDate, endDate) {
             return Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
         }
-        let currentDate = new Date(2023, 07, 28);
+        let endDate = new Date(2023, 07, 28);
         let startDate = new Date(2022, 05, 18);
-        let daysDisplay = daysSub = currentDate.getDate() - startDate.getDate();
-        let monthsDisplay = monthsSub = currentDate.getMonth() - startDate.getMonth();
-        let yearsDisplay = yearsSub = currentDate.getYear() - startDate.getYear();
+        let daysDisplay = daysSub = endDate.getDate() - startDate.getDate();
+        let monthsDisplay = monthsSub = endDate.getMonth() - startDate.getMonth();
+        let yearsDisplay = yearsSub = endDate.getYear() - startDate.getYear();
 
         if (daysDisplay < 0) {
             daysDisplay = daysDisplay + 30;
