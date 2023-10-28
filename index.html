@@ -193,8 +193,8 @@
         function daysDated(startDate, endDate) {
             return Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
         }
-        let endDate = new Date(2023, 07, 28);
-        let startDate = new Date(2022, 05, 18);
+        let endDate = new Date(2023, 0o7, 28);
+        let startDate = new Date(2022, 0o5, 18);
         let daysDisplay = daysSub = endDate.getDate() - startDate.getDate();
         let monthsDisplay = monthsSub = endDate.getMonth() - startDate.getMonth();
         let yearsDisplay = yearsSub = endDate.getYear() - startDate.getYear();
@@ -211,7 +211,7 @@
             "daysCount"
         ).innerHTML = `We have dated for ${daysDated(
             startDate, endDate
-        )} days.\nThat's ${yearsDisplay} ${yearsDisplay<2 ? 'year' : 'years'}, ${monthsDisplay} ${monthsDisplay<2 ? 'month' : 'months'} and ${daysDisplay} ${daysDisplay<2 ? 'day' : 'days'}.`;
+        )} days.\nThat's ${yearsDisplay} ${yearsDisplay < 2 ? 'year' : 'years'}, ${monthsDisplay} ${monthsDisplay < 2 ? 'month' : 'months'} and ${daysDisplay} ${daysDisplay < 2 ? 'day' : 'days'}.`;
     }
 
 
